@@ -1,0 +1,10 @@
+.image-wrapper {
+    padding-left: 10px;
+}
+
+.title {
+    align-self: center;   
+    text-align: center;
+    font-size: 2em;
+    color: #667309;
+}

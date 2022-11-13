@@ -1,0 +1,37 @@
+.table-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 1em;
+}
+
+.search {
+    align-self: flex-end;
+    margin-bottom: 1em;
+}
+.input-search {
+    outline-color:#667309;
+}
+
+.pagination-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.pagination-dropdown {
+    width: 10%;
+    min-width: 80px;
+    margin-top: 10px;
+}
+
+.button-pagination {
+    background-color: #EEF2DF;
+    color: #272824;
+    border: none;
+}
+
+.next-and-previous {
+    min-width: 120px;
+}

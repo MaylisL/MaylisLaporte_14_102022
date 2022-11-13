@@ -1,0 +1,14 @@
+.react-datepicker__triangle {
+    visibility: hidden;
+    margin: 10px;
+}
+
+.react-datepicker-wrapper {
+    width: auto; 
+}
+
+.react-datepicker__input-container input {
+    font-size: 1em;
+    outline-color: #667309 !important;
+    min-height: 30px;
+}

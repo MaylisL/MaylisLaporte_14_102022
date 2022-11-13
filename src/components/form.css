@@ -1,0 +1,59 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    flex-wrap: nowrap;
+    box-shadow: 5px 5px 2px 1px rgb(56 62 66 / 0.1);
+    margin: auto;
+    padding-block: 10px;
+    padding-inline: 30px;
+    justify-content: space-between;
+    border: 1px solid rgb(56 62 66 / 0.1);
+    background-color: #ffffff;
+    font-size: 1.2em;
+}
+
+fieldset, .formId, .formWorkDepartment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formWorkDepartment {
+    margin-bottom: 20px;
+}
+
+.formLabels {
+    margin-block: 10px;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.formInputs {
+    border:1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    outline-color: #667309 !important;
+    font-size: 1.2rem;
+    font-weight: 100;
+    min-height: 30px;
+}
+
+
+.button {
+    margin: auto;
+    border-radius: 8px;
+    padding-inline: 15px;
+    padding-block: 5px;
+}
+
+.button-submit {
+    border: 1px solid #B7BF99;
+    background-color: #667309;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+button::hover {
+    box-shadow: 4px 4px 2px 1px #EEF2DF;
+}

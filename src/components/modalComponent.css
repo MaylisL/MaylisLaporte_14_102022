@@ -1,0 +1,15 @@
+.modal {
+    border: solid 1px #667309;
+}
+
+.modal-backdrop {
+    background-color: rgba(183,191,153, 0.8);
+}
+
+.modal-closing {
+    color: #667309;
+}
+
+.modal-closing:focus {
+    outline:#667309 5px auto;
+}
