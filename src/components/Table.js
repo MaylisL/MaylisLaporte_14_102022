@@ -101,7 +101,7 @@ const TableComponent = () => {
             street: (array) => array.sort((a, b) => a.street.localeCompare(b.street)),
             city: (array) => array.sort((a, b) => a.city.localeCompare(b.city)),
             state: (array) => array.sort((a, b) => a.state.localeCompare(b.state)),
-            zipCode: (array) => array.sort((a, b) => a.zipCode - b.zipcode),
+            zipCode: (array) => array.sort((a, b) => a.zipCode - b.zipCode),
           },
         },
       );

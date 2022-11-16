@@ -9,7 +9,7 @@ export const mockData = [
         street:"117 Morissette Mountains Niaport",
         city:"New York",
         state: "NY",
-        zipCode: 27450-3237
+        zipCode: 27450
     },
     {
         id: 124,
@@ -81,7 +81,7 @@ export const mockData = [
         street:"28839 Swift Knolls West Nya",
         city:"Baltimore",
         state: "MD",
-        zipCode: 41850-1350
+        zipCode: 41850
     },
     {
         id: 130,
@@ -96,7 +96,7 @@ export const mockData = [
         zipCode: 49326
     },
     {
-        id: 130,
+        id: 131,
         firstName: "Mario",
         lastName: "Newman",
         startDate: "10/02/2021",
