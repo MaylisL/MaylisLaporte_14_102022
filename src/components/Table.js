@@ -84,7 +84,7 @@ const TableComponent = () => {
         })
     }
 
-    const showingFrom = pagination.state.page * pagination.state.size + 1;
+    const showingFrom = data.nodes.length > 0 ? pagination.state.page * pagination.state.size + 1 : 0;
     const showingTo = ((pagination.state.page + 1) * pagination.state.size) < data.nodes.length ? ((pagination.state.page + 1) * pagination.state.size) : data.nodes.length;
     
     // sort
@@ -165,7 +165,7 @@ const TableComponent = () => {
                     <button
                     type='button'
                     className='button button-pagination'
-                    disabled={pagination.state.page === 0}
+                    disabled={data.nodes.length === 0 || pagination.state.page === 0}
                     onClick={() => pagination.fns.onSetPage(pagination.state.page - 1)}
                     >
                     {'Previous'}
@@ -174,7 +174,7 @@ const TableComponent = () => {
                     <button
                     type='button'
                     className='button button-pagination'
-                    disabled={pagination.state.page + 1 === pagination.state.getTotalPages(data.nodes)}
+                    disabled={data.nodes.length === 0 || pagination.state.page + 1 === pagination.state.getTotalPages(data.nodes)}
                     onClick={() => pagination.fns.onSetPage(pagination.state.page + 1)}
                     >
                     {'Next'}

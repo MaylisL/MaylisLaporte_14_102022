@@ -1,4 +1,4 @@
-import Modal from 'modal-component-byml/dist/Modal';
+import { Modal } from 'modal-component-byml';
 import './modalComponent.css';
 
 export function ModalComponent(props) {
