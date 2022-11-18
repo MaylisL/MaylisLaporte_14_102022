@@ -6,14 +6,12 @@ import { add } from '../redux/employeeSlice';
 //components
 import DatePickerComponent from './DatePicker';
 import MyDropdown from './dropdown';
+import { ModalComponent } from './ModalComponent';
 
 import { departments, states } from '../data/data';
 
-
 //styles
 import './form.css';
-import { ModalComponent } from './ModalComponent';
-
 
 export default function Form() {
 
@@ -24,11 +22,9 @@ export default function Form() {
         label: state.name
        };
     });
-   
 
     const [showModale, setShowModale] = useState(false);
     const [resetFormKey, setResetFormKey] = useState(true);
-
    
     const dispatch = useDispatch();
 
@@ -43,10 +39,11 @@ export default function Form() {
         zipCode: "",
         department: departments[0].value,
     }
-    const [employeeInfo, setEmployeeInfo,] = useState(initialEmployeeInfo);
-      const handleChange = (event) => {
+    const [employeeInfo, setEmployeeInfo] = useState(initialEmployeeInfo);
+
+    const handleChange = (event) => {
         setEmployeeInfo({ ...employeeInfo, [event.target.name]: event.target.value });
-      };
+    };
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -100,7 +97,6 @@ export default function Form() {
                 <div className='formWorkDepartment'>
                     <label className='formLabels' htmlFor="department">Department</label>
                     <MyDropdown options={departments} onChange={handleDepartmentOptionChange} id="department" name="department" />
-
                 </div>    
                 <button className="button button-submit" type='submit'>Save</button>
             </form>

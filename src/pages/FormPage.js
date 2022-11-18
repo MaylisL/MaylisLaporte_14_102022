@@ -16,4 +16,4 @@ export default function FormPage() {
             <Link to="current-employee">View Current Employees </Link>
         </nav>
     </Fragment>
-)}
+)}  
